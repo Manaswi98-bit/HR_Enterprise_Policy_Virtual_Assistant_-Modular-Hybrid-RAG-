@@ -12,14 +12,14 @@ load_dotenv()
 def get_embedding_model():
     """Initializes the official Mistral AI embedding model."""
     if not os.environ.get("MISTRAL_API_KEY"):
-        raise ValueError("❌ MISTRAL_API_KEY missing from environment or .env file.")
+        raise ValueError("MISTRAL_API_KEY missing from environment or .env file.")
         
-    print("🤖 Loading the Mistral AI embedding model...")
+    print("Loading the Mistral AI embedding model...")
     return MistralAIEmbeddings(model="mistral-embed")
 
 def setup_hybrid_search(chunks, embedding_model):
     """Sets up basic Vector (Chroma) and Keyword (BM25) databases."""
-    print("📦 Building Hybrid search indexes...")
+    print("Building Hybrid search indexes...")
     vector_db = Chroma.from_documents(
         documents=chunks,
         embedding=embedding_model,
@@ -31,9 +31,9 @@ def setup_hybrid_search(chunks, embedding_model):
 def get_llm():
     """Initializes a direct connection to Mistral AI using your MISTRAL_API_KEY."""
     if not os.environ.get("MISTRAL_API_KEY"):
-        raise ValueError("❌ MISTRAL_API_KEY missing from environment or .env file.")
+        raise ValueError("MISTRAL_API_KEY missing from environment or .env file.")
 
-    print("🤖 Connecting directly to Mistral AI API...")
+    print("Connecting directly to Mistral AI API...")
     # Pure direct API connection to Mistral - does not use Hugging Face
     llm = ChatMistralAI(
         model="mistral-large-latest",
