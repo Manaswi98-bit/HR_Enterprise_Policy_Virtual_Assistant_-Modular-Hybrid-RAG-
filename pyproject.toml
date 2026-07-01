@@ -1,0 +1,29 @@
+[project]
+name = "hr-enterprise-policy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain-community",
+    "langchain-core",
+    "langchain-google-genai",
+    "langchain-huggingface",
+    "langchain-chroma",
+    "sentence-transformers",
+    "langchain_mistralai",
+    "google-genai",
+    "faiss-cpu",
+    "chromadb",
+    "pypdf",
+    "numpy",
+    "pandas",
+    "spacy",
+    "tqdm",
+    "python-dotenv",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
