@@ -6,7 +6,7 @@
 
 ---
 
-## 👋 For everyone (the 30-second version)
+## 👋The 30-second version
 
 Imagine a new employee asks: *"How many paid leave days do I get, and can I carry them over?"*
 
@@ -21,7 +21,7 @@ If the answer isn't in the documents, it honestly says so instead of guessing. T
 
 ---
 
-## 💼 Why this project matters (for recruiters & hiring managers)
+## 💼 Why this project matters
 
 This is a **production-style RAG system**, not a toy chatbot. It demonstrates the concerns that matter in real enterprise AI work:
 
@@ -36,7 +36,7 @@ This is a **production-style RAG system**, not a toy chatbot. It demonstrates th
 
 ---
 
-## 🛠️ For engineers (the technical version)
+## 🛠️ The technical version
 
 ### Architecture
 
