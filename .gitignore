@@ -4,9 +4,26 @@ __pycache__/
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
 # Virtual environments
-.venv
+.venv/
+
+# Secrets & environment
 .env
-data
+.env.*
+!.env.example
+
+# Source documents (private data)
+data/
+
+# Generated RAG artifacts
+chroma_db_storage/
+my_local_db/
+.flashrank_cache/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,7 +1,7 @@
 [project]
 name = "hr-enterprise-policy"
 version = "0.1.0"
-description = "Add your description here"
+description = "Enterprise HR policy assistant using hybrid RAG (dense + BM25) with cross-encoder re-ranking, grounded Mistral generation, and built-in answer-quality evaluation."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -22,6 +22,8 @@ dependencies = [
     "spacy",
     "tqdm",
     "python-dotenv",
+    "streamlit",
+    "flashrank"
 ]
 
 [build-system]
