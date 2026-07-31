@@ -2,8 +2,6 @@
 
 > An AI assistant that reads your company's HR policy documents and answers employee questions in plain English — **only** from what the documents actually say, with a source citation for every answer.
 
-**Difficulty:** Intermediate ·
-
 **Skills demonstrated:** Retrieval-Augmented Generation (RAG), Hybrid Search, Cross-Encoder Re-ranking, Answer-quality evaluation · 
 
 **Status:** ✅ Working
